@@ -3,8 +3,8 @@
 
 ## ✅ Phase 1: Project Planning & Setup  
 📅 Week 1  
-- [ ] Create a place to hold all design docs, plans and schemas
-- [ ] Define MVP scope and user roles (e.g., baker, manager)  
+- [X] Create a place to hold all design docs, plans and schemas
+- [X] Define MVP scope and user roles (e.g., baker, manager)  
 - [ ] Set up GitHub monorepo or separate frontend/backend repos  
 - [ ] Set up Prettier, ESLint, commit linting  
 - [ ] Create shared style guide + component design plan  

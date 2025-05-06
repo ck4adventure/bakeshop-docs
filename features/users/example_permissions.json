@@ -1,0 +1,54 @@
+{
+  "roles": {
+    "owner": {
+      "description": "Account creator and business owner with full permissions.",
+      "permissions": [
+        "view_business_profile",
+        "edit_business_profile",
+        "manage_subscription",
+        "cancel_service",
+        "delete_account",
+        "view_all_data",
+        "invite_user",
+        "remove_user",
+        "assign_roles",
+        "view_reports",
+        "export_data",
+        "manage_recipes",
+        "manage_products",
+        "manage_ingredients",
+        "set_daily_quotas",
+        "view_inventory",
+        "adjust_inventory",
+        "mark_production_complete"
+      ]
+    },
+    "manager": {
+      "description": "Manages daily operations and teams within assigned locations.",
+      "permissions": [
+        "invite_user",
+        "remove_user",
+        "set_daily_quotas",
+        "view_reports",
+        "export_data",
+        "manage_recipes",
+        "manage_products",
+        "manage_ingredients",
+        "view_inventory",
+        "adjust_inventory",
+        "mark_production_complete"
+      ]
+    },
+    "baker": {
+      "description": "Logs batches and bakes, and performs inventory-related tasks.",
+      "permissions": [
+        "view_baking_schedule",
+        "log_new_batch",
+        "log_bake",
+        "view_recipes",
+        "perform_inventory_audit",
+        "add_notes"
+      ]
+    }
+  }
+}
