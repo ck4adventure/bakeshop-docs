@@ -5,15 +5,15 @@
 📅 Week 1  
 - [X] Create a place to hold all design docs, plans and schemas
 - [X] Define MVP scope and user roles (e.g., baker, manager)  
-- [ ] Set up GitHub monorepo or separate frontend/backend repos  
-- [ ] Set up Prettier, ESLint, commit linting  
-- [ ] Create shared style guide + component design plan  
-- [ ] Choose secrets management strategy (e.g., Doppler, `.env`, GitHub Actions)  
-- [ ] Draft a minimal privacy policy for test users  
+- [X] Set up GitHub monorepo or separate frontend/backend repos  
+- [X] Set up Prettier, ESLint, commit linting  
+- [X] Create shared style guide + component design plan  
+- [X] Choose secrets management strategy (e.g., Doppler, `.env`, GitHub Actions)  
+- [X] Draft a minimal privacy policy for test users  
 
 ## ✅ Phase 2: Tooling & Environment  
 📅 Week 2  
-- [ ] Set up Vite + React + Tailwind CSS frontend  
+- [X] Set up Vite + React + Tailwind CSS frontend  
 - [ ] Set up NestJS backend project (with PostgreSQL support)  
 - [ ] Use Prisma or TypeORM for DB layer  
 - [ ] Set up API docs using Swagger (Nest)  
