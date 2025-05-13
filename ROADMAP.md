@@ -20,19 +20,20 @@
 - [ ] Set up Docker for local dev (backend, db)  
 - [ ] Set up CI pipeline for test/lint/build on push
 - [ ] Add HTTPS support for local dev (e.g., mkcert)
+- [ ] Write out basic user stories to inform db schema
 
 ## ✅ Phase 3: Core Architecture  
 📅 Weeks 3–4  
 - [ ] Design frontend folder structure (e.g., pages, components, hooks, routes)  
-- [ ] Design backend modules (e.g., AuthModule, InventoryModule, BakeryModule)  
 - [ ] Set up REST endpoints in NestJS (Auth, User, Inventory)  
 - [ ] Implement global auth guard and roles guard (RBAC)  
 - [ ] Define basic threat model (who might misuse the system?)
-- [ ] Create database schema: Users, Bakeries, Items, Quotas  
-- [ ] Write seed scripts for sample data  
 - [ ] Add helmet and CORS configuration in NestJS
 - [ ] Sanitize and validate incoming requests (e.g., class-validator)  
 - [ ] Add structured logging (e.g., pino, Winston) with request IDs  
+- [ ] Create database schema: Users, Bakeries, Items, Quotas  
+- [ ] Design backend modules (e.g., AuthModule, InventoryModule, BakeryModule)  
+- [ ] Write seed scripts for sample data  
 
 ## ✅ Phase 4: Auth & RBAC  
 📅 Week 5  
