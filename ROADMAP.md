@@ -14,7 +14,8 @@
 ## ✅ Phase 2: Tooling & Environment  
 📅 Week 2  
 - [X] Set up Vite + React + Tailwind CSS frontend  
-- [ ] Set up NestJS backend project (with PostgreSQL support)  
+- [X] Set up NestJS backend project 
+- [ ] Set up Postgresql Instance for dev env, decide on where to host in production
 - [ ] Use Prisma or TypeORM for DB layer  
 - [ ] Set up API docs using Swagger (Nest)  
 - [ ] Set up Docker for local dev (backend, db)  

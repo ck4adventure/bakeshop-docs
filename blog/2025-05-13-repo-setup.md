@@ -17,3 +17,31 @@ Now that I've completed the shadcn init, I add a Card component to check that it
 
 ## Secrets Management Strategy
 It's interesting that chatgpt would put this in before the backend framework is in place, but I can see where it's a decision to be made as early as possible. I prefer `.env` files for keeping my secrets safe, first insuring it's on the `.gitignore` and never committed, and using the `dotenv` package to retrieve them in my code. Once it's deployed the prod secrets would be entered into environment variables and made available that way. I looked up how github actions works with managed secrets in their yaml files as well, good to know for later.
+
+But then I found a docs page from Nest where they have their own .env config module that wraps dotenv. I figured why not, and have switched the nest api to use the Nest config module. If I ever need to inject vars from that file as env variables prior to the app bootstrapping itself, I can use the node20+ command of `nest start --env-file .env`
+
+To use, the ConfigService must be injected into any module that would need access
+```ts
+// feature.module.ts
+@Module({
+  imports: [ConfigModule],
+  // ...
+})
+```
+Inject it:
+```ts
+
+constructor(private configService: ConfigService) {}
+```
+
+And use it:
+```ts
+
+// get an environment variable
+const dbUser = this.configService.get<string>('DATABASE_USER');
+
+// get a custom configuration value
+const dbHost = this.configService.get<string>('database.host');
+```
+
+## Next up tomorrow - Installing Postgresql and PrismaORM
