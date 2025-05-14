@@ -45,3 +45,4 @@ const dbHost = this.configService.get<string>('database.host');
 ```
 
 ## Next up tomorrow - Installing Postgresql and PrismaORM
+Ended up reading through both the TypeORM and Prisma docs, based on the ease of reading the docs and level of support for schemas and migrations I am choosing to go with Prisma. Next steps tomorrow will be to research and decide what my options are for a hosted postgres instance, and then set up one locally either through docker or use my local running postgres, which probably needs an update.
