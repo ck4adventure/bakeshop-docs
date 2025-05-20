@@ -21,7 +21,7 @@
 - ~~[ ] Set up Docker for local dev (backend, db)~~, skipping for now  
 - [ ] Set up CI pipeline for test/lint/build on push
 - [ ] Add HTTPS support for local dev (e.g., mkcert)
-- [ ] Write out basic user stories to inform db schema
+- [X] Write out basic user stories to inform db schema
 
 ## ✅ Phase 3: Core Architecture  
 📅 Weeks 3–4  
