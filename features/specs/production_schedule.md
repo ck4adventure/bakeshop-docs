@@ -6,19 +6,17 @@ Rather than a bake to order business concept, many bakeries bake a set quota of 
 So first a weekly schedule is created for each item, each day of the week with a number. This information is used to write out a planned schedule, creating bake plans for the next calendar week at the close of business Sunday. 
 
 ## User Stories
-### Manager Sets the Weekly Schedule
+### Manager Sets/Updates the Weekly Schedule
 Most likely the admin/manager will already have some sort of weekly schedule system. So on `ItemCreation` could also add in an optional `ProductionScheduleForm` for the item. Additionally, the `ItemDetailPage` should have a `ProductionSchedule` section in it which displays the current values and has a button to edit them.
 
-## Creating a Quota Schedule
-On adding an item the manager can specify a bake schedule. Form with fields for each day of the week and the expected count for each as a number counter. Save or cancel buttons
-
-### Optional Active/Inactive Item Status
-Active/Inactive as a flag for each item allows the system to filter items for the daily bake order list, and other things. Rules can be enforced on just active items, such as requiring a weekly quota schedule.
 
 
 ## Routes
 
 ## Web Components
+- ProductionScheduleUpdateForm
+- ProductionScheduleComponent
+- both will have the days of the week and a count for each day
 
 ## Database Schemas
 ### Weekly Schedule Table
@@ -34,8 +32,6 @@ CREATE TABLE production_schedules (
   PRIMARY KEY (item_id, weekday)
 );
 ```
-
-On item
 
 
 

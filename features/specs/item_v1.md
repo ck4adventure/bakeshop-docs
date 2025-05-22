@@ -38,9 +38,14 @@ CreateItemForm
 
 InventoryListView
 - InventoryItemCard
-  -- ItemName
-  -- ItemCount
-  -- ItemInventoryStatus: above par, at par, min par, nextday, zero
+  - ItemName
+  - ItemCount
+  - ItemInventoryStatus: above par, at par, min par, nextday, zero
+
+- ItemDetailPage
+	- ItemName
+	- ItemCount
+	- Current ProductionSchedule
 
 ## DB Schemas Used
 
@@ -49,8 +54,9 @@ InventoryListView
 - name, varchar, unique
 - active, bool, default true
 
+- has a weekly `ProductionSchedule`
+
 ```sql
--- Product catalog
 CREATE TABLE items (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
