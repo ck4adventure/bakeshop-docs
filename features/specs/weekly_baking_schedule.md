@@ -1,4 +1,4 @@
-# Weekly Baking Schedule
+# Weekly Baking/Production Schedule
 
 ## Description
 Rather than a bake to order business concept, many bakeries bake a set quota of items early each morning and sell them until they run out or close for the day. These baking numbers are often built on historical sales data in an attempt to be as efficient as possible with sales.
@@ -7,7 +7,7 @@ So first a weekly schedule is created for each item, each day of the week with a
 
 ## User Stories
 ### Manager Sets the Weekly Schedule
-Most likely the admin/manager will already have some sort of weekly schedule system. So on `ItemCreation` could also add in an optional `weekly schedule form section` for the item. Additionally, the `ItemDetailPage` should have a `weekly quota` section in it which displays the current values and has a button to edit them.
+Most likely the admin/manager will already have some sort of weekly schedule system. So on `ItemCreation` could also add in an optional `ProductionScheduleForm` for the item. Additionally, the `ItemDetailPage` should have a `ProductionSchedule` section in it which displays the current values and has a button to edit them.
 
 ## Creating a Quota Schedule
 On adding an item the manager can specify a bake schedule. Form with fields for each day of the week and the expected count for each as a number counter. Save or cancel buttons
@@ -35,7 +35,7 @@ CREATE TABLE production_schedules (
 );
 ```
 
-
+On item
 
 
 

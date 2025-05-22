@@ -1,6 +1,18 @@
 # Projected Inventory
 
+## Actions
+A `BakeCalendar` can be built on query to project out the daily bakes, paying special attention to finding the `ParMinimumDate` and `ZeroItemsDate`. Could eventually use the calendar for other things, such as reminders.
 
+Below all that would be a `BakedownChart` showing the expected `InventoryCount` for each day, again visually highlighting when the stock count reaches the `ParMinimum`, `DailyBakeQuota`, `ZeroItems`, etc.
+
+## Routes
+### Backend
+`GET /inventory/:id/projection` returns the projection data from the query
+
+## Web Components
+`BakedownChart`, which uses the dates and counts for a given item's projected daily inventory to display a chart with dates for the x-axis, quantity for the y-axis. The user will be able to hover over 
+
+## Database
 ### Query the Projected Daily Inventory
 ```sql
 WITH RECURSIVE usage_projection AS (

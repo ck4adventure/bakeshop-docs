@@ -1,4 +1,4 @@
-# Today's Bake Order / Bake Run / Bakeoff
+# Daily Bake List / Bake Run / Bakeoff
 
 ## Description
 
