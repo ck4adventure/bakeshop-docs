@@ -1,6 +1,8 @@
 
 # 📅 B2B Bakery App Roadmap (React + Vite + Nest)
 
+Interesting pro/con - an app like this would require every baker to have a login and possibly use in on their phone, similar to square payroll. Not the worst, but something to keep in mind.
+
 ## ✅ Phase 1: Project Planning & Setup  
 📅 Week 1  
 - [X] Create a place to hold all design docs, plans and schemas

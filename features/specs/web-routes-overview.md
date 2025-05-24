@@ -20,6 +20,7 @@
 - adding in special order counts where exist
 - bakeoff marked complete, all items added to the item even store, which triggers count update for each item as well
 - prolly want a view page for recent history and upcoming
+- bakeoff list per baker, some unassigned, that way any things to be accomplished by a single person, like me, can be differentiated from items that get pulled from stock to pack special orders. Or the barista's get accounts to make fulfilling the special orders
 
 ## Special Orders
 /inventory/orders
