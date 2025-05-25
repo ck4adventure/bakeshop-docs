@@ -60,8 +60,20 @@ InventoryListView
 CREATE TABLE items (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
-	active BOOLEAN DEFAULT TRUE
+	active BOOLEAN DEFAULT TRUE,
+	production_category_id INTEGER REFERENCES production_categories, -- or sep table??
+	minimum_par NUMBER non-neg -- can track changes to this via user action log
 );
+```
+
+Items are assigned to a baker(s) for 
+```sql
+CREATE TABLE items_bakers (
+	item_id REFERENCES items(id)
+	user_id REFERENCES users(id)
+)
+-- may want some kind of role enforcement of which roles can assign to items
+
 ```
 
 ## Actions

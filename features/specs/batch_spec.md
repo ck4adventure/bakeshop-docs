@@ -1,7 +1,9 @@
 # Batches
 
 ## Description
-Batches are the execution of a specific recipe to create a real quantity of items. For example, a batch of chocolate chip cookies may make 96 cookies. 
+Batches are the execution of a specific recipe to create a real quantity of items. For example, a batch of chocolate chip cookies may make 96 cookies. Batches are listed in the Item Event Store and trigger an update to the item's inventory count. Batches are started and completed by a baker/manager/admin.
+
+Managers/Admin are able to see batches in progress and finish them out if needed. Should still get logged to the baker. 
 
 ## Roles
 Admin
@@ -28,3 +30,9 @@ If starting from the `+`, an initial `ItemChooserModal` will appear listing all 
 If starting from ItemViewPage, or after selecting an Item from the `ItemChooserModal`, the User sees the `AddBatchModal` listing the `ItemName`, the `ExpectedBatchCount` within a number chooser field with the ability to input a new qty or use the up down arrows to increment the `ActualBatchCount`. Eventually, there might be `BatchNotes` to track issues. There are Save and Cancel buttons. Once Save is clicked, a `ConfirmationModal` appears just to make sure batch counts don't accidentally get added. This is logged in the `TransactionLog` as a batch with the itemid, actual count, date and time. 
 
 Once a Batch has been saved to the transaction log, the current count for the item is updated, and the projected inventory counts calendar needs to be updated in order to have the chart accurately reflect the MinPar and other bakedown dates.
+
+## View an Item's History Of Batches
+
+## View All Latest Batches
+- sort by date
+- sort by Baker/Creator

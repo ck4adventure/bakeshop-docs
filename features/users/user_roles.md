@@ -3,6 +3,7 @@
 **What Roles are there in a bakery app?**
 
 Admin Role - first user is likely owner/manager
+- admin's id becomes the `CustomerID` used across all tables
 - Create account with business email
 - Add business details
 - Setup additional roles for the daily users

@@ -1,6 +1,8 @@
 # Daily Bake List / Bake Run / Bakeoff
 
 ## Description
+The daily bake list is a combination of the `DailyQuota` from the `WeeklyProductionSchedule` plus any `SpecialOrders` for the day. Optionally, the `Manager` can override the `DailyQuota` to be higher or lower. The total count will entered in to the `TransactionLog` once an item on the list is marked complete. The `Baker` can also update the `FinalCount` to be different than the `TotalCount` in the event of shortage, burnt bake, accidentally made too many, etc. 
+The `DailyLIst` organizes it's items by both `ProductionCategory` and `BakerResponsible`. 
 
 ## Roles
 - Admin
@@ -58,7 +60,7 @@ CREATE TABLE bake_runs (
   manager_override_quantity INTEGER,            -- optional override
   special_order_quantity INTEGER NOT NULL DEFAULT 0, 
   
-  final_quantity INTEGER GENERATED ALWAYS AS (
+  total_quantity INTEGER GENERATED ALWAYS AS (
     COALESCE(manager_override_quantity, base_quantity) + special_order_quantity
   ) STORED,
 
