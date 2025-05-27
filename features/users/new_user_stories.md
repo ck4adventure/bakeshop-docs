@@ -29,6 +29,31 @@
 	- password
 	- submit button
 
+## DB
+### Users Table
+- id
+- email
+- pw_hash or oath_id
+- first name
+- last name
+- biz_belongs_to
+
+### Business Info
+- id
+- business name
+- owner_id?
+- has many users through buz_id on User
+
+
+
+### Roles Tables
+- user_id
+- bus_id
+- role
+- unique user, bus 
+
+
+
 ## Actions
 As a new user, I navigate to the bakeshop url and view the home page.
 - there is a header

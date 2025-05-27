@@ -1,8 +1,12 @@
-# Daily Bake List / Bake Run / Bakeoff
+# Daily Production List 
 
 ## Description
-The daily bake list is a combination of the `DailyQuota` from the `WeeklyProductionSchedule` plus any `SpecialOrders` for the day. Optionally, the `Manager` can override the `DailyQuota` to be higher or lower. The total count will entered in to the `TransactionLog` once an item on the list is marked complete. The `Baker` can also update the `FinalCount` to be different than the `TotalCount` in the event of shortage, burnt bake, accidentally made too many, etc. 
+The daily production list is a combination of the `DailyQuota` from the `WeeklyProductionSchedule` plus any `SpecialOrders` for the day. 
 The `DailyLIst` organizes it's items by both `ProductionCategory` and `BakerResponsible`. 
+
+ The `Manager` can override the `DailyQuota` to be higher or lower before the start of the shift. The `Baker`/user can also update the `FinalCount` to be different than the `TotalCount` in the event of not enough, burnt bake, accidentally made too many, etc. The `FinalCount` will entered in to the `TransactionLog` once an item on the list is marked complete.
+
+For example the decorating baker is responsible for ensuring the special order cakes and loaves are available the morning of, by 8am. The production baker ensures enough base stock of loaves and cakes for both the finish baker and morning baker. The morning baker bakes off initial stock for sales and any special orders.
 
 ## Roles
 - Admin
