@@ -21,25 +21,25 @@ Interesting pro/con - an app like this would require every baker to have a login
 - [X] Use Prisma or TypeORM for DB layer  
 - [X] Set up API docs using Swagger (Nest)  
 - ~~[ ] Set up Docker for local dev (backend, db)~~, skipping for now  
-- [ ] Set up CI pipeline for test/lint/build on push
+- [X] OPEN PR Set up CI pipeline for test/lint/build on push
 - [ ] Add HTTPS support for local dev (e.g., mkcert)
 - [X] Write out basic user stories to inform db schema
 
 ## ✅ Phase 3: Core Architecture  
 📅 Weeks 3–4  
-- [ ] Design frontend folder structure (e.g., pages, components, hooks, routes)  
+- [X] Add helmet and CORS configuration in NestJS
 - [ ] Create database schema: Users, Bakeries, Items, Quotas  
 - [ ] Design backend modules (e.g., AuthModule, InventoryModule, BakeryModule)  
 - [ ] Set up REST endpoints in NestJS (Auth, User, Inventory)  
 - [ ] Implement global auth guard and roles guard (RBAC)  
 - [ ] Define basic threat model (who might misuse the system?)
-- [ ] Add helmet and CORS configuration in NestJS
 - [ ] Sanitize and validate incoming requests (e.g., class-validator)  
 - [ ] Add structured logging (e.g., pino, Winston) with request IDs  
 - [ ] Write seed scripts for sample data  
 
 ## ✅ Phase 4: Auth & RBAC  
 📅 Week 5  
+- [ ] Design frontend folder structure (e.g., pages, components, hooks, routes)  
 - [ ] Add JWT-based login/register endpoint (NestJS)  
 - [ ] Create frontend login + auth context  
 - [ ] Protect routes on frontend (role-aware)  
