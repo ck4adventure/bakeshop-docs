@@ -22,12 +22,13 @@ Interesting pro/con - an app like this would require every baker to have a login
 - [X] Set up API docs using Swagger (Nest)  
 - ~~[ ] Set up Docker for local dev (backend, db)~~, skipping for now  
 - [X] OPEN PR Set up CI pipeline for test/lint/build on push
-- [ ] Add HTTPS support for local dev (e.g., mkcert)
+- ~~[ ] Add HTTPS support for local dev (e.g., mkcert)~~, skipping since no standalone deploy
 - [X] Write out basic user stories to inform db schema
+- [X] Add helmet and CORS configuration in NestJS
+- [X] Add rate limiting (throttler)
 
 ## ✅ Phase 3: Core Architecture  
 📅 Weeks 3–4  
-- [X] Add helmet and CORS configuration in NestJS
 - [ ] Create database schema: Users, Bakeries, Items, Quotas  
 - [ ] Design backend modules (e.g., AuthModule, InventoryModule, BakeryModule)  
 - [ ] Set up REST endpoints in NestJS (Auth, User, Inventory)  
